@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+    <link rel="stylesheet" href="./Styles/game.css">
+</head>
+<body id="body">
+    <div id="navbar" class="hstack">
+           <h2>Dice Roll Game App</h2>
+           <div class="hstack">
+            <!-- <h2 id="time">Time :- 30 sec</h2> -->
+            <h2 id="name"></h2>
+            <img src="./assests/profile.png" alt="profile-pic">
+          </div>
+    </div>
+     <div id="main_box">
+        <audio id="background-music" src="./assests/neon-gaming-128925.mp3" autoplay></audio>
+        <!-- <video autoplay loop muted plays-inline class="background-clip">
+            <source src="./assests/pexels-shvets-production-9058102 (2160p).mp4" type="video/mp4">
+        </video> -->
+
+    <div id="box-2" class="hstack">
+        <img id="audio" class="logos" onclick="toggleMusic()" src="./assests/audio-speaker-on.png" alt="audio_logo">
+       
+        <div id="box-3" class="hstack">
+            <h3>Read Instructrions</h3>
+            <img id="user-guide" class="logos" src="./assests//user-guide.png" alt="">
+        </div>
+    </div>
+    <h1 id="nickname"></h1>
+    <h1 id="heading2">Let's Start. <span>Roll The Dice</span></h1>
+    
+    <div id="container">
+        <div id="box1"  class="dices-box">
+            <h3 id="Name"></h3>
+            <img id="dice1" src="./assests/dice (1).png" alt="dice_1_img"  class="dices">
+            <div>
+                <h3>Score</h3>
+                <h4 id="score1">0</h4>
+            </div>
+        </div>
+
+            <div id="box2" class="dices-box">
+                <h3>Anonymous</h3>
+                <img id="dice2" src="./assests/dice (1).png" alt="dice_1_img"  class="dices">
+                <div>
+                    <h3>Score</h3>
+                    <h4 id="score2">0</h4>
+                </div>
+            </div>
+    </div>
+<!-- </div> -->
+    <button id="rollTheDiceBtn" onclick="rollTheDice()">Roll The Dice</button>
+</div>
+</body>
+
+<script src="./Scripts/game.js"></script>
+
+</html>

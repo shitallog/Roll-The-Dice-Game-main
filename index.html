@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./Styles/index.css">
+</head>
+<body>
+    <div id="container">
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="./assests/dice_-_50365 (540p).mp4" type="video/mp4">
+    </video>
+    <h1 id="heading">Roll The Dice</h1>
+    
+    <form onsubmit="handleSubmit(event)">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter Your Name">
+        <label for="nickname">Nickname</label>
+        <input id="nickname" name="nickname" type="text" placeholder="Enter Your Nickname">
+        <input id="submit" type="submit" value="Play The Game">
+    </form>
+    </div>
+    
+</body>
+
+<script src="./Scripts/index.js"></script>
+
+</html>
